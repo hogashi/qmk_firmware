@@ -544,11 +544,11 @@ void render_status(struct CharacterMatrix *matrix) {
   static char logo[][2][3]={{{0x95,0x96,0},{0xb5,0xb6,0}},{{0x97,0x98,0},{0xb7,0xb8,0}}};
   if(keymap_config.swap_lalt_lgui==false){
     matrix_write(matrix, logo[0][0]);
-    matrix_write_P(matrix, PSTR("\n"));
+    matrix_write_P(matrix, PSTR("  hogashi\n"));
     matrix_write(matrix, logo[0][1]);
   }else{
     matrix_write(matrix, logo[1][0]);
-    matrix_write_P(matrix, PSTR("\n"));
+    matrix_write_P(matrix, PSTR("  hogashi\n"));
     matrix_write(matrix, logo[1][1]);
   }
 
